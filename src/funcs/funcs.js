@@ -271,13 +271,13 @@ function setBackgroundMode() {
                 document.getElementsByClassName("welcomeLabel")[0].className = "welcomeLabel clear";
                 var footerH3 = document.getElementsByClassName("footerH3");
                 for (var i = 0; i < footerH3.length; i++) {
-
                     footerH3[i].className = "footerH3 clear";
                 }
 
                 if (document.getElementById("actualBackgroundMode") != null) {
 
                     document.getElementById("actualBackgroundMode").textContent = "Modo actual: clear";
+                    document.getElementById("actualBackgroundMode").style.color = "rgb(236, 236, 236)";
                     document.getElementById("backgroundModeIconContainer").innerHTML = "";
                     document.getElementById("backgroundMode").style.backgroundColor = "rgba(0, 0, 0, 0.5)";
 
@@ -303,13 +303,12 @@ function setBackgroundMode() {
                 document.getElementsByClassName("welcomeLabel")[0].className = "welcomeLabel dark";
                 var footerH3 = document.getElementsByClassName("footerH3");
                 for (var i = 0; i < footerH3.length; i++) {
-
                     footerH3[i].className = "footerH3 dark";
                 }
 
                 if (document.getElementById("actualBackgroundMode") != null) {
-
                     document.getElementById("actualBackgroundMode").textContent = "Modo actual: dark";
+                    document.getElementById("actualBackgroundMode").style.color = "black";
                     document.getElementById("backgroundModeIconContainer").innerHTML = "";
                     document.getElementById("backgroundMode").style.backgroundColor = "white";
 
